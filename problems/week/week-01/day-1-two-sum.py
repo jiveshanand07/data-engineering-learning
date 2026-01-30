@@ -62,7 +62,7 @@ print("Final Result", twoSum(nums, target))
 
 def two_sum_optimized(nums: List[int], target: int) -> List[int]:
     seen = {}
-    for i, num in enumerate(nums):
+    for i, num in enumerate(nums):          
         complement = target - num
         if complement in seen:
             return [seen.get(complement), i]
